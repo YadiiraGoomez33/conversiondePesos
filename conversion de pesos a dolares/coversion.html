@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>CONVERSION DE PESOS A DOLARES O VICEVERSA</title>
+    <link rel="stylesheet" href="dolar.css"
+ </head>
+    <body>
+
+    <fieldset>
+      <center>
+         <h1>Conversion  de Pesos a Dólares</h1>
+         <br>
+         <form id="conversion-form">
+            
+            <label for="amount">Cantidad:</label>
+            <input type="number" id="amount" step="0.01" required>
+            <br>   
+          <br>
+          <label for="currency">Tipo de conversión:</label>
+          <br>
+          <br>
+          <select id="currency" required>
+            <option value="pesos">Pesos a Dólares</option>
+            <option value="dolares">Dólares a Pesos</option>
+             </select>
+             <br>
+             <br>
+             <label for="exchange-rate">Valor del dólar:</label>
+             <input type="number" id="exchange-rate" step="0.01" required>
+             <br>
+             <br>
+             <button type="submit">Convertir</button>
+             <br>
+             <br>
+             <button type="button" onclick="resetForm()">Limpiar</button>
+             <br>
+         </form>
+   
+         <div id="result"></div>
+        </center>
+    </fieldset>
+    </body>
+</html>
+<script src="conversion.js"></script>
+
